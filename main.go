@@ -1,9 +1,9 @@
 package main
 
 import (
-	"GinProject/06_go_gorm/gorm_conn"
-	"GinProject/06_go_gorm/gorm_query"
-	"GinProject/06_go_gorm/model"
+	"gorm/gorm_conn"
+	"gorm/gorm_query"
+	"gorm/model"
 )
 
 func main() {
