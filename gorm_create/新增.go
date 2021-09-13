@@ -1,9 +1,9 @@
 package gorm_create
 
 import (
-	"gorm/model"
 	"fmt"
 	"gorm.io/gorm"
+	"gorm/model"
 	"strconv"
 )
 
@@ -19,9 +19,9 @@ func SingleGet(db *gorm.DB) {
 
 // BatchCreate 批量插入
 func BatchCreate(db *gorm.DB) {
-	var products []model.Product2
+	var products []model.Product1
 	for x := 0; x < 10; x++ {
-		pro := model.Product2{
+		pro := model.Product1{
 			Name:  "测试" + strconv.Itoa(x),
 			Code:  strconv.Itoa(x),
 			Price: 500 * (x + 1),

@@ -1,10 +1,10 @@
 package gorm_query
 
 import (
-	"gorm/model"
 	"errors"
 	"fmt"
 	"gorm.io/gorm"
+	"gorm/model"
 	"time"
 )
 
@@ -136,5 +136,6 @@ func QueryLimitAndOffset(db *gorm.DB) {
 		//fmt.Println(value.ID)
 		fmt.Println(value)
 	}
+	db.Exec("select * from product1")
 
 }

@@ -2,7 +2,7 @@ package main
 
 import (
 	"gorm/gorm_conn"
-	"gorm/gorm_query"
+	"gorm/gorm_delete"
 	"gorm/model"
 )
 
@@ -24,5 +24,14 @@ func main() {
 	//gorm_query.QueryByStructAndMap(db)
 	//gorm_query.QueryBySpecialFiled(db)
 	//gorm_query.QueryByOrder(db)
-	gorm_query.QueryLimitAndOffset(db)
+	//gorm_query.QueryLimitAndOffset(db)
+
+	//更新
+	//gorm_update.Update(db)
+	//gorm_update.UpdateRow(db)
+	//gorm_update.UpdateRows(db)
+
+	//删除
+	//gorm_delete.Delete(db)
+	gorm_delete.DeleteBulk(db)
 }
